@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 set.seed(100)
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -8,6 +8,12 @@ knitr::opts_chunk$set(
 ## ----reading_titers-----------------------------------------------------------
 # Load the Racmacs package
 library(Racmacs)
+
+# Set an option for the number of computer cores to run in parallel when optimizing maps
+# The default when running on CRAN is to use 2
+options(RacOptimizer.num_cores = 1)
+# However you can also set the number of cores to the maximum number like this
+# options(RacOptimizer.num_cores = parallel::detectCores())
 
 # Read in the titer table
 path_to_titer_file <- system.file("extdata/h3map2004_hitable.csv", package = "Racmacs")

@@ -1,8 +1,8 @@
 Package: Racmacs
 Type: Package
 Title: Antigenic Cartography Macros
-Version: 1.2.7
-Date: 2023-09-01
+Version: 1.2.8
+Date: 2023-11-22
 Authors@R: 
   c(person(given = "Sam",
            family = "Wilks",
@@ -22,8 +22,8 @@ Imports: Rcpp, jsonlite, ks, brotli, shiny, shinyFiles, shinyjs,
         htmlwidgets, ggplot2 (>= 3.0.0), htmltools, rmarchingcubes,
         shape, ellipsis, MASS, magrittr, igraph, dplyr, vctrs, rlang
 Suggests: testthat, r3js, knitr, rmarkdown, rstudioapi, plotly,
-        geometry, gdata, stringr, tibble, tidyr, base64enc, lifecycle,
-        MCMCpack
+        geometry, readxl, stringr, tibble, tidyr, base64enc, lifecycle,
+        MCMCpack, spelling
 LinkingTo: Rcpp, RcppArmadillo, RcppProgress, RcppEnsmallen, rapidjsonr
 Encoding: UTF-8
 RoxygenNote: 7.2.3
@@ -32,9 +32,10 @@ URL: https://acorg.github.io/Racmacs/,
         https://github.com/acorg/Racmacs/
 BugReports: https://github.com/acorg/Racmacs/issues
 License: AGPL-3
+Language: en-GB
 NeedsCompilation: yes
-Packaged: 2023-09-04 03:39:48 UTC; cambridge
+Packaged: 2023-11-22 18:09:50 UTC; cambridge
 Author: Sam Wilks [aut, cre]
 Maintainer: Sam Wilks <sw463@cam.ac.uk>
 Repository: CRAN
-Date/Publication: 2023-09-04 09:40:05 UTC
+Date/Publication: 2023-11-23 09:00:07 UTC
