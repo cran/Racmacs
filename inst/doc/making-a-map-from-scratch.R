@@ -2,7 +2,8 @@
 set.seed(100)
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  eval = rmarkdown::pandoc_available()
 )
 
 ## ----reading_titers-----------------------------------------------------------
